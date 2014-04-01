@@ -17,7 +17,8 @@ class Roller:
         self.conn.commit()
 
     def show(self):
-        self.dasda = asdad
+        for rec in self.cursor.fetchmany(2):
+            print"Nick: %s\nWynik: %d\n" % (rec[0], rec[1])
 
 
 
